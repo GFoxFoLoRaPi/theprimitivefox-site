@@ -3,106 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Primitive Fox — Wet Oil Study | Off-Grid &amp; Primitive Living</title>
+  <title>The Primitive Fox — Field Sketchbook | Off-Grid &amp; Primitive Living</title>
   <style>
-    :root { --canvas: #efe8da; --card: #f8f3e8; --ink: #26201a; --charcoal: #5c5349; --ember: #d9480f; }
+    :root { --paper: #faf6ee; --card: #fffdf9; --ink: #24201c; --graphite: #686057; --ember: #d9480f; --sage: #3a5a40; }
     * { box-sizing: border-box; }
-    body {
-      margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--ink); line-height: 1.65;
-      background-color: var(--canvas);
-      background-image:
-        repeating-linear-gradient(0deg, rgba(38,32,26,0.04) 0px, rgba(38,32,26,0.04) 1px, transparent 1px, transparent 3px),
-        repeating-linear-gradient(90deg, rgba(38,32,26,0.04) 0px, rgba(38,32,26,0.04) 1px, transparent 1px, transparent 3px);
-    }
-    .wrap { max-width: 960px; margin: 0 auto; padding: 26px 20px 64px; }
+    body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--ink); line-height: 1.65; background: var(--paper); }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 28px 20px 64px; }
     nav {
       display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
-      background: var(--card); border: 2px solid #4a3525; border-radius: 6px;
-      padding: 13px 20px; box-shadow: 4px 4px 0 rgba(38,32,26,0.22); margin-bottom: 24px;
+      background: var(--card); border: 2px solid var(--ink); border-radius: 6px;
+      padding: 13px 20px; box-shadow: 4px 4px 0 rgba(36,32,28,0.16); margin-bottom: 24px;
     }
-    .logo { font-weight: 700; font-size: 19px; letter-spacing: 0.04em; text-transform: uppercase; }
+    .logo { font-weight: 700; font-size: 19px; letter-spacing: 0.05em; text-transform: uppercase; }
     .logo span { color: var(--ember); }
-    .wet-badge { font-family: system-ui, sans-serif; font-size: 11.5px; font-weight: 800; text-transform: uppercase; background: #fff3e0; color: #9c4221; border: 1.5px dashed #9c4221; padding: 4px 12px; border-radius: 999px; }
-    .easel { background: #3e2723; border: 6px solid #5d4037; border-radius: 8px; padding: 12px; box-shadow: 0 16px 34px rgba(38,32,26,0.28); margin-bottom: 28px; }
-    svg.art { width: 100%; height: auto; display: block; border-radius: 3px; background: #f2ecdf; }
-    .card { background: var(--card); border: 2px dashed var(--charcoal); border-radius: 8px; padding: 22px 24px; margin-bottom: 22px; }
+    .badge { font-family: system-ui, sans-serif; font-size: 11.5px; font-weight: 800; text-transform: uppercase; background: #fff3e0; color: #b45309; border: 1.5px solid #b45309; padding: 4px 12px; border-radius: 999px; }
+    .sketch-frame {
+      background: var(--card); border: 2px solid var(--ink); border-radius: 8px; padding: 14px;
+      box-shadow: 6px 6px 0 rgba(36,32,28,0.14); margin-bottom: 26px;
+    }
+    svg.sketch { width: 100%; height: auto; display: block; border: 1px solid #d6cfc2; border-radius: 4px; background: #fcf9f2; }
+    .card { background: var(--card); border: 1.5px solid var(--ink); border-radius: 8px; padding: 22px 24px; margin-bottom: 22px; box-shadow: 4px 4px 0 rgba(36,32,28,0.1); }
     .card h2 { margin: 0 0 8px; font-size: 21px; }
-    .card p { margin: 0 0 12px; color: #4a4036; font-size: 15.5px; }
-    .gear-pill { display: inline-block; font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; text-decoration: none; color: var(--ink); background: #ebe2d0; border: 1.5px solid #4a3525; padding: 6px 13px; border-radius: 6px; }
-    footer { border-top: 1.5px dashed #9c8f7e; padding-top: 16px; color: var(--charcoal); font-family: system-ui, sans-serif; font-size: 12.5px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    .card p { margin: 0 0 14px; color: #463f38; font-size: 15.5px; }
+    .gear-pill { display: inline-block; font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; text-decoration: none; color: var(--ink); background: #f3ede0; border: 1.5px solid var(--ink); padding: 7px 14px; border-radius: 6px; }
+    .gear-pill:hover { background: #ffe8cc; border-color: var(--ember); }
+    footer { border-top: 1px dashed #9e9589; padding-top: 16px; color: var(--graphite); font-family: system-ui, sans-serif; font-size: 12.5px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <nav>
       <div class="logo">The Primitive <span>Fox</span></div>
-      <div class="wet-badge">🎨 Wet Oil on Linen · Under Construction</div>
+      <div class="badge">✏️ Field Sketch #01 · Under Construction</div>
     </nav>
-    <div class="easel">
-      <svg class="art" viewBox="0 0 880 380" xmlns="http://w3.org">
+    <div class="sketch-frame">
+      <svg class="sketch" viewBox="0 0 880 370" xmlns="http://w3.org">
         <defs>
-          <filter id="oilBrush" x="-10%" y="-10%" width="120%" height="120%">
-            <feTurbulence type="fractalNoise" baseFrequency="0.032" numOctaves="3" seed="7" result="noise" />
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="13" xChannelSelector="R" yChannelSelector="G" />
-          </filter>
-          <radialGradient id="fireOil" cx="50%" cy="68%" r="52%">
-            <stop offset="0%" stop-color="#ffb703" stop-opacity="0.88" />
-            <stop offset="32%" stop-color="#e85d04" stop-opacity="0.52" />
-            <stop offset="68%" stop-color="#1b4332" stop-opacity="0.28" />
-            <stop offset="100%" stop-color="#f2ecdf" stop-opacity="0" />
+          <pattern id="hatch" width="7" height="7" patternTransform="rotate(35)" patternUnits="userSpaceOnUse">
+            <line x1="0" y1="0" x2="0" y2="7" stroke="#7a7267" stroke-width="1.1" />
+          </pattern>
+          <pattern id="crossHatch" width="8" height="8" patternTransform="rotate(35)" patternUnits="userSpaceOnUse">
+            <line x1="0" y1="0" x2="0" y2="8" stroke="#5e564c" stroke-width="1" />
+            <line x1="0" y1="0" x2="8" y2="0" stroke="#5e564c" stroke-width="0.8" />
+          </pattern>
+          <radialGradient id="fireSplash" cx="50%" cy="68%" r="36%">
+            <stop offset="0%" stop-color="#ffb703" stop-opacity="0.58" />
+            <stop offset="48%" stop-color="#e85d04" stop-opacity="0.22" />
+            <stop offset="100%" stop-color="#fcf9f2" stop-opacity="0" />
           </radialGradient>
-          <linearGradient id="twilightSky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#1d3557" stop-opacity="0.65" />
-            <stop offset="55%" stop-color="#e07a5f" stop-opacity="0.35" />
-            <stop offset="100%" stop-color="#f2ecdf" stop-opacity="0" />
-          </linearGradient>
         </defs>
-        <rect width="880" height="380" fill="#f2ecdf" />
-        <!-- Oil Brush Painted Canopy Sky, Misty Ridge & Forest Clearing -->
-        <g filter="url(#oilBrush)">
-          <ellipse cx="440" cy="65" rx="260" ry="62" fill="url(#twilightSky)" />
-          <polygon points="240,210 380,115 510,185 630,120 710,215" fill="#457b9d" opacity="0.32" />
-          <ellipse cx="440" cy="300" rx="350" ry="70" fill="#582f0e" opacity="0.38" />
-          <ellipse cx="440" cy="296" rx="260" ry="52" fill="#7f4f24" opacity="0.45" />
-          <rect width="880" height="380" fill="url(#fireOil)" />
-          <!-- Happy Little Layered Evergreens (Sap Green & Van Dyke Brown) -->
-          <polygon points="315,248 355,82 395,248" fill="#1b4332" opacity="0.92" />
-          <polygon points="330,205 355,82 380,205" fill="#2d6a4f" opacity="0.85" />
-          <polygon points="485,248 525,78 565,248" fill="#1b4332" opacity="0.94" />
-          <polygon points="500,200 525,78 550,200" fill="#40916c" opacity="0.8" />
-          <polygon points="395,235 440,62 485,235" fill="#2d6a4f" opacity="0.78" />
+        <rect width="880" height="370" fill="#fcf9f2" />
+        <!-- Selective Watercolor Splash Around Campfire & Canopy Gap -->
+        <ellipse cx="440" cy="64" rx="185" ry="42" fill="#a8dadc" opacity="0.38" />
+        <ellipse cx="440" cy="288" rx="235" ry="44" fill="#dda15e" opacity="0.32" />
+        <rect width="880" height="370" fill="url(#fireSplash)" />
+
+        <!-- Distant Mountain Ridge & Canopy Lines (Graphite + Hatching) -->
+        <polyline points="40,215 210,125 360,195 510,112 690,198 840,145" fill="none" stroke="#686057" stroke-width="1.5" />
+        <polygon points="210,125 275,162 210,175" fill="url(#hatch)" opacity="0.55" />
+        <polygon points="510,112 585,155 510,170" fill="url(#hatch)" opacity="0.55" />
+
+        <!-- Uncolored Graphite Pines (Left & Right) With Cross-Hatched Shadow Sides -->
+        <g stroke="#3d3730" stroke-width="1.6" fill="none" stroke-linejoin="round">
+          <polygon points="82,272 132,76 182,272" />
+          <polygon points="132,76 182,272 132,272" fill="url(#crossHatch)" />
+          <polygon points="154,262 194,106 234,262" />
+          <polygon points="194,106 234,262 194,262" fill="url(#hatch)" />
+          <!-- Lashed A-Frame Tarp Shelter (Shaded Pencil) -->
+          <polygon points="182,274 252,188 312,274" fill="url(#hatch)" stroke-width="2" />
+          <line x1="174" y1="280" x2="258" y2="180" stroke-width="2.4" />
+          <line x1="318" y1="280" x2="245" y2="180" stroke-width="2.4" />
+
+          <!-- Right Pines & Split-Log Bench -->
+          <polygon points="646,262 686,104 726,262" />
+          <polygon points="686,104 726,262 686,262" fill="url(#hatch)" />
+          <polygon points="708,272 762,74 816,272" />
+          <polygon points="762,74 816,272 762,272" fill="url(#crossHatch)" />
+          <rect x="568" y="260" width="92" height="22" rx="10" fill="url(#hatch)" stroke-width="1.8" />
+          <circle cx="568" cy="271" r="11" fill="#fcf9f2" />
         </g>
-        <!-- Unpainted Outer Vine-Charcoal Underdrawing (Shelter, Pines & Log) -->
-        <g stroke="#5c5349" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.82">
-          <polygon points="75,275 128,78 180,275" stroke-dasharray="9 4" />
-          <polygon points="145,265 188,105 232,265" />
-          <polygon points="175,275 248,185 310,275" stroke-width="2.2" />
-          <line x1="248" y1="185" x2="332" y2="262" stroke-dasharray="7 4" />
-          <polygon points="650,265 695,98 740,265" />
-          <polygon points="712,275 768,74 822,275" stroke-dasharray="9 4" />
-          <rect x="572" y="262" width="90" height="22" rx="10" stroke-width="2" />
-        </g>
-        <!-- Impasto Campfire & Small Game on Wooden Spit -->
-        <g>
-          <line x1="382" y1="282" x2="386" y2="205" stroke="#3d2516" stroke-width="5" stroke-linecap="round" />
-          <line x1="498" y1="282" x2="494" y2="205" stroke="#3d2516" stroke-width="5" stroke-linecap="round" />
-          <line x1="372" y1="212" x2="508" y2="212" stroke="#582f0e" stroke-width="3.8" stroke-linecap="round" />
-          <ellipse cx="440" cy="212" rx="23" ry="11" fill="#7f3b18" stroke="#2b1408" stroke-width="2" />
-          <g filter="url(#oilBrush)">
-            <path d="M 440 218 C 416 244, 412 266, 440 276 C 468 266, 464 244, 440 218 Z" fill="#dc2f02" />
-            <path d="M 440 232 C 424 250, 422 266, 440 273 C 458 266, 456 250, 440 232 Z" fill="#ffba08" />
-          </g>
-          <path d="M 434 244 C 431 252, 433 259, 438 263" stroke="#fff9eb" stroke-width="2.5" stroke-linecap="round" fill="none" />
-          <ellipse cx="412" cy="283" rx="13" ry="7" fill="#6c6359" />
-          <ellipse cx="440" cy="286" rx="14" ry="7" fill="#574f47" />
-          <ellipse cx="468" cy="283" rx="13" ry="7" fill="#6c6359" />
-        </g>
-        <text x="22" y="358" fill="#5c5349" font-size="12.5" font-style="italic">Study #01 — Wet oil on linen · happy little evergreens &amp; warm firelight painted, outer shelter still in charcoal.</text>
+
+        <!-- Center Selective-Color Pines + Colored Campfire & Spit -->
+        <polygon points="322,248 358,92 394,248" fill="#3a5a40" stroke="#24201c" stroke-width="1.8" />
+        <polygon points="358,92 394,248 358,248" fill="url(#crossHatch)" />
+        <polygon points="486,248 522,88 558,248" fill="#344e41" stroke="#24201c" stroke-width="1.8" />
+        <polygon points="522,88 558,248 522,248" fill="url(#crossHatch)" />
+
+        <!-- Forked Wooden Spit & Roasting Game (Colored In) -->
+        <line x1="382" y1="280" x2="386" y2="205" stroke="#4a3525" stroke-width="4.5" stroke-linecap="round" />
+        <line x1="498" y1="280" x2="494" y2="205" stroke="#4a3525" stroke-width="4.5" stroke-linecap="round" />
+        <line x1="372" y1="212" x2="508" y2="212" stroke="#6f4e37" stroke-width="3.2" stroke-linecap="round" />
+        <ellipse cx="440" cy="212" rx="22" ry="10.5" fill="#9c4a1a" stroke="#24201c" stroke-width="1.8" />
+
+        <!-- Colored Campfire & Stone Ring -->
+        <line x1="408" y1="280" x2="472" y2="266" stroke="#3b281c" stroke-width="5.5" stroke-linecap="round" />
+        <line x1="412" y1="266" x2="468" y2="280" stroke="#2b1d14" stroke-width="5.5" stroke-linecap="round" />
+        <path d="M 440 220 C 418 244, 414 264, 440 274 C 466 264, 462 244, 440 220 Z" fill="#e85d04" stroke="#24201c" stroke-width="1.8" />
+        <path d="M 440 233 C 426 249, 424 264, 440 271 C 456 264, 454 249, 440 233 Z" fill="#ffb703" />
+        <ellipse cx="412" cy="282" rx="12" ry="6.5" fill="#8d847a" stroke="#24201c" stroke-width="1.5" />
+        <ellipse cx="440" cy="285" rx="13" ry="6.5" fill="#736b62" stroke="#24201c" stroke-width="1.5" />
+        <ellipse cx="468" cy="282" rx="12" ry="6.5" fill="#8d847a" stroke="#24201c" stroke-width="1.5" />
+
+        <text x="20" y="352" fill="#686057" font-size="12" font-style="italic">Field Study #01 — Graphite cross-hatch with selective firelight wash · full build logs &amp; gear lists coming soon.</text>
       </svg>
     </div>
     <div class="card">
       <h2>Off-Grid Living, Primitive Skills &amp; Minimalist Builds</h2>
-      <p>The oil paint is still drying on <strong>The Primitive Fox</strong>. We are documenting self-reliant forest craft, off-grid tiny shelters, water &amp; firewood systems, and low-footprint camper builds—zero unnecessary electronics, just proven field craft.</p>
+      <p>We are sketching out the next chapter of <strong>The Primitive Fox</strong>—documenting self-reliant forest craft, off-grid tiny shelters, water &amp; firewood systems, and low-footprint camper builds with zero unnecessary electronics.</p>
       <a class="gear-pill" href="https://garrettellisfox.com" target="_blank" rel="noopener">Field &amp; Camp Gear Shelf (More Links Dropping Soon) ↗</a>
     </div>
     <footer>
