@@ -3,23 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Primitive Fox — Off-Grid Living, RV Mods &amp; Mesh Comms</title>
+  <title>The Primitive Fox — Work in Progress | Off-Grid &amp; Primitive Living</title>
   <style>
-    body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: #111613; color: #e8ece9; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 24px; }
-    .card { max-width: 640px; background: #19211c; border: 1px solid #2d3b32; border-radius: 14px; padding: 36px; box-shadow: 0 18px 40px rgba(0,0,0,0.45); }
-    .tag { display: inline-block; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #e07a3f; border: 1px solid #e07a3f44; padding: 4px 10px; border-radius: 999px; margin-bottom: 16px; }
-    h1 { margin: 0 0 12px; font-size: 32px; line-height: 1.2; }
-    p { margin: 0 0 20px; color: #b5c2b9; line-height: 1.6; }
-    .footer { font-size: 13px; color: #7e8f84; border-top: 1px solid #2d3b32; padding-top: 16px; }
-    a { color: #e07a3f; text-decoration: none; }
+    :root { --canvas: #f4efe6; --card: #fbf8f1; --ink: #2b2620; --pencil: #6b645c; --ember: #e85d04; --gold: #f48c06; --pine: #2d4739; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--ink); line-height: 1.65;
+      background-color: var(--canvas);
+      background-image:
+        repeating-linear-gradient(0deg, rgba(43,38,32,0.03) 0px, rgba(43,38,32,0.03) 1px, transparent 1px, transparent 4px),
+        repeating-linear-gradient(90deg, rgba(43,38,32,0.03) 0px, rgba(43,38,32,0.03) 1px, transparent 1px, transparent 4px);
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 26px 20px 64px; }
+    nav {
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+      background: var(--card); border: 2px solid var(--ink); border-radius: 6px;
+      padding: 13px 20px; box-shadow: 4px 4px 0 rgba(43,38,32,0.2); margin-bottom: 24px;
+    }
+    .logo { font-weight: 700; font-size: 19px; letter-spacing: 0.04em; text-transform: uppercase; }
+    .logo span { color: var(--ember); }
+    .wet-badge {
+      font-family: system-ui, sans-serif; font-size: 11.5px; font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; background: #fff3e0; color: #b45309; border: 1.5px dashed #b45309;
+      padding: 4px 12px; border-radius: 999px;
+    }
+    .easel {
+      background: var(--card); border: 3px solid #5c4033; border-radius: 8px; padding: 14px;
+      box-shadow: 0 14px 30px rgba(43,38,32,0.18), inset 0 0 24px rgba(139,115,85,0.18);
+      margin-bottom: 28px; position: relative;
+    }
+    svg.art { width: 100%; height: auto; display: block; border: 1.5px solid #c8bfb0; border-radius: 4px; }
+    .card {
+      background: var(--card); border: 2px dashed var(--pencil); border-radius: 8px;
+      padding: 22px 24px; margin-bottom: 24px;
+    }
+    .card h2 { margin: 0 0 8px; font-size: 21px; }
+    .card p { margin: 0 0 12px; color: #4a433b; font-size: 15.5px; }
+    .gear-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+    .gear-pill {
+      font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; text-decoration: none;
+      color: var(--ink); background: #efe9dc; border: 1.5px solid var(--ink); padding: 6px 13px; border-radius: 6px;
+    }
+    .gear-pill:hover { background: #ffe8cc; border-color: var(--ember); }
+    footer {
+      border-top: 1.5px dashed #a89f91; padding-top: 16px; color: var(--pencil);
+      font-family: system-ui, sans-serif; font-size: 12.5px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+    }
   </style>
 </head>
 <body>
-  <main class="card">
-    <span class="tag">Fox &amp; Flame Foundry · Field Division</span>
-    <h1>The Primitive Fox</h1>
-    <p>Off-grid RV &amp; camper van engineering, minimalist systems, solar power, and Reticulum / LoRa survival communications.</p>
-    <div class="footer">Field kits &amp; build logs launching soon · A <a href="https://foxandflamefoundry.com">Fox &amp; Flame Foundry</a> venture</div>
-  </main>
+  <div class="wrap">
+    <nav>
+      <div class="logo">The Primitive <span>Fox</span></div>
+      <div class="wet-badge">🎨 Canvas Still Wet · Under Construction</div>
+    </nav>
+
+    <div class="easel">
+      <svg class="art" viewBox="0 0 880 370" xmlns="http://w3.org">
+        <defs>
+          <!-- Warm Wet-Paint Firelight Glow -->
+          <radialGradient id="fireGlow" cx="50%" cy="68%" r="48%">
+            <stop offset="0%" stop-color="#ffb703" stop-opacity="0.72" />
+            <stop offset="38%" stop-color="#e85d04" stop-opacity="0.34" />
+            <stop offset="75%" stop-color="#2d4739" stop-opacity="0.14" />
+            <stop offset="100%" stop-color="#f4efe6" stop-opacity="0" />
+          </radialGradient>
+          <!-- Subtle Sky Peeking Through Canopy -->
+          <linearGradient id="canopySky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#90b4ce" stop-opacity="0.45" />
+            <stop offset="100%" stop-color="#f4efe6" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+
+        <!-- Base Unpainted Linen Canvas -->
+        <rect width="880" height="370" fill="#f4efe6" />
+        <!-- Subtle Sky Through Background Canopy -->
+        <ellipse cx="440" cy="58" rx="230" ry="52" fill="url(#canopySky)" />
+        <!-- Painted Forest Floor Clearing -->
+        <ellipse cx="440" cy="295" rx="340" ry="62" fill="#d8cbb8" opacity="0.65" />
+        <!-- Warm Wet-Paint Firelight Wash -->
+        <rect width="880" height="370" fill="url(#fireGlow)" />
+
+        <!-- Background Painted Pines (Center) -->
+        <polygon points="335,235 365,95 395,235" fill="#2d4739" opacity="0.88" />
+        <polygon points="485,235 518,88 550,235" fill="#243b2f" opacity="0.9" />
+        <polygon points="405,225 438,75 470,225" fill="#355645" opacity="0.75" />
+
+        <!-- Left Side: Raw Graphite Pencil Sketch Pines & Primitive Lean-To Shelter -->
+        <g stroke="#6b645c" stroke-width="1.6" fill="none" stroke-linecap="round">
+          <polygon points="85,265 130,85 175,265" stroke-dasharray="7 4" />
+          <polygon points="150,255 190,105 230,255" />
+          <line x1="130" y1="265" x2="130" y2="295" />
+          <!-- Primitive Lashed A-Frame / Lean-To Tarp Shelter (Pencil Outline) -->
+          <polygon points="175,268 245,188 305,268" stroke-width="2" />
+          <line x1="245" y1="188" x2="325" y2="258" stroke-dasharray="6 3" />
+          <line x1="168" y1="274" x2="252" y2="180" stroke-width="2.4" />
+          <line x1="312" y1="274" x2="238" y2="180" stroke-width="2.4" />
+          <!-- Pencil Construction Cross-Marks -->
+          <line x1="60" y1="55" x2="95" y2="55" stroke-dasharray="4 4" />
+          <line x1="77" y1="38" x2="77" y2="72" stroke-dasharray="4 4" />
+        </g>
+
+        <!-- Right Side: Raw Graphite Pencil Sketch Pines & Split-Log Seat -->
+        <g stroke="#6b645c" stroke-width="1.6" fill="none" stroke-linecap="round">
+          <polygon points="655,258 695,100 735,258" />
+          <polygon points="715,268 765,78 815,268" stroke-dasharray="8 4" />
+          <!-- Sketched Log Seat & Woodpile -->
+          <rect x="575" y="256" width="88" height="22" rx="10" stroke-width="2" />
+          <circle cx="575" cy="267" r="11" />
+          <circle cx="695" cy="272" r="9" stroke-dasharray="5 3" />
+          <circle cx="714" cy="272" r="9" stroke-dasharray="5 3" />
+          <circle cx="705" cy="256" r="9" stroke-dasharray="5 3" />
+        </g>
+
+        <!-- Center Painted Hero: Stone Fire Ring, Wet-Paint Campfire & Game on Wooden Spit -->
+        <g>
+          <!-- Forked Y-Sticks & Crossbar Spit -->
+          <line x1="382" y1="278" x2="386" y2="205" stroke="#4a3525" stroke-width="4.5" stroke-linecap="round" />
+          <line x1="498" y1="278" x2="494" y2="205" stroke="#4a3525" stroke-width="4.5" stroke-linecap="round" />
+          <line x1="374" y1="212" x2="506" y2="212" stroke="#5c4033" stroke-width="3.5" stroke-linecap="round" />
+          <!-- Small Game Roasting on Spit -->
+          <ellipse cx="440" cy="212" rx="22" ry="11" fill="#8d4925" stroke="#3b1d0e" stroke-width="2" />
+          <path d="M 424 205 Q 440 201 454 206" stroke="#f4a261" stroke-width="2" fill="none" />
+
+          <!-- Campfire Logs & Wet-Paint Flames -->
+          <line x1="408" y1="278" x2="472" y2="264" stroke="#3b281c" stroke-width="6" stroke-linecap="round" />
+          <line x1="412" y1="264" x2="468" y2="278" stroke="#2b1d14" stroke-width="6" stroke-linecap="round" />
+          <path d="M 440 222 C 422 244, 416 262, 440 272 C 464 262, 458 244, 440 222 Z" fill="#e85d04" />
+          <path d="M 440 234 C 428 248, 426 262, 440 269 C 454 262, 452 248, 440 234 Z" fill="#ffb703" />
+          <!-- Glossy Wet-Paint Highlight Strokes -->
+          <path d="M 435 243 C 432 250, 433 257, 438 261" stroke="#fff8e7" stroke-width="2.2" stroke-linecap="round" fill="none" />
+
+          <!-- Stone Fire Ring -->
+          <ellipse cx="404" cy="280" rx="10" ry="6" fill="#7d746b" stroke="#2b2620" stroke-width="1.5" />
+          <ellipse cx="424" cy="284" rx="11" ry="6" fill="#6b635b" stroke="#2b2620" stroke-width="1.5" />
+          <ellipse cx="446" cy="285" rx="11" ry="6" fill="#857c72" stroke="#2b2620" stroke-width="1.5" />
+          <ellipse cx="468" cy="282" rx="10" ry="6" fill="#6b635b" stroke="#2b2620" stroke-width="1.5" />
+        </g>
+
+        <!-- Handwritten Artist Margin Note -->
+        <text x="24" y="348" fill="#6b645c" font-size="12.5" font-style="italic">Study #01 — Solo primitive camp · firelight pass wet, outer timber &amp; shelter still in graphite.</text>
+      </svg>
+    </div>
+    <div class="card">
+      <h2>Off-Grid Living, Primitive Skills &amp; Minimalist Builds</h2>
+      <p>The paint is still drying on <strong>The Primitive Fox</strong>. We are documenting self-reliant forest craft, off-grid tiny shelters, water &amp; firewood systems, and low-footprint camper builds—strip away the noise, keep only what works.</p>
+      <p style="margin-bottom:6px;font-weight:700;color:var(--ink);">Field &amp; Camp Gear Shelf (More Links Dropping Soon):</p>
+      <div class="gear-row" id="gearRow"></div>
+    </div>
+
+    <footer>
+      <span>© 2026 The Primitive Fox · A Fox &amp; Flame Foundry Venture</span>
+      <span>As an Amazon Associate, I earn from qualifying purchases.</span>
+    </footer>
+  </div>
+
+  <script>
+    // DROP YOUR BUSHCRAFT / CAMPING SITESTRIPE LINKS HERE ANYTIME:
+    const BUSHCRAFT_LINKS = [
+      { label: "Field & Camp Gear List (Updating Soon)", url: "https://garrettellisfox.com" }
+    ];
+    document.getElementById("gearRow").innerHTML = BUSHCRAFT_LINKS
+      .map(g => `<a class="gear-pill" href="${g.url}" target="_blank" rel="noopener">${g.label} ↗</a>`)
+      .join("");
+  </script>
 </body>
 </html>
